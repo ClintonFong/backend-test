@@ -1,0 +1,17 @@
+<phpunit
+    processIsolation='true'
+    convertErrorsToExceptions='true'
+    convertNoticesToExceptions='true'
+    convertWarningsToExceptions='true'
+    colors='true'
+    bootstrap='vendor/autoload.php'
+>
+    <php>
+        <ini name="date.timezone" value="Australia/Sydney"/>
+    </php>
+    <testsuites>
+        <testsuite name='Helpers'>
+            <directory>tests</directory>
+        </testsuite>
+    </testsuites>
+</phpunit>
